@@ -1,0 +1,199 @@
+::root{
+    box-sizing: border-box;
+}
+
+*, ::before, ::after{
+    margin: 0; padding: 0; box-sizing: inherit;
+}
+
+.b{
+    border: 2px solid #d6a357; 
+    padding: 2em;
+    border-radius: 6px;
+    color: white;
+    background-color: #ff9900;
+    width: 100px;
+    margin-left: 40%;
+
+}
+
+.button {
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color:#ff9900; 
+    border-radius: 6px;
+    border: 1px solid #ff9900; 
+}
+
+.navbar{
+    width: 100%; height: 56px;
+}
+.navbar .links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    background-color: black;
+    position:relative;
+    height: 100%;
+}
+
+.links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links .logo{
+    height: 100px;
+    width: 100px;
+    background: #000000;
+    position: absolute;
+    top: 40px;
+    padding: 0 5px 5px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+}
+
+.links .links img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.title-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.5em;
+}
+
+.title-content div h1{
+    margin-bottom:0;
+}
+
+.title-content div h5{
+    margin-top: 0;
+}
+
+figure img{
+    width: 30%;
+}
+
+figcaption{
+    font-style: italic;
+}
+
+/* Front image */
+
+header#front-img{
+    width: 100%;
+    height: 60vh;
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: url("concierto.jpg");
+}
+
+#front-img .main-front{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 50vh;
+
+    color: white;
+    text-align: center;
+
+    background: var(--psudo-black);
+
+    font-size: 4em;
+}
+
+
+.new-grid{
+    grid-column: 1/span 2;
+    margin: 5%;;
+
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.1em;
+    font-size: 3em;
+    margin:auto;
+    color: #000000;
+
+}
+
+p, h4{
+    margin: 0%;
+    text-align: left;
+}
+
+img{
+    width: 500px; 
+    height: 400px;
+    padding: 4%;
+    margin:auto; /*esto es para centrar una imagen*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+}
+.registro{
+    background-image: url("contacus.jpg"); 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto; /*para centrar toda la seccion*/
+    align-items: center; /*para centrar todo el contenido en la seccion */
+    object-fit: cover;
+}
+.registro .lado-izquierdo{
+    padding: 2em;
+    
+}
+.registro .lado-derecho{
+    margin: 0%;
+    padding: 0%;
+}
+.registro .lado-derecho>img{
+    border-radius: 0.375em;
+    display: inline-block;
+    margin: 0%;
+    padding: 0%;
+}
+
+.registro .lado-izquierdo h3{
+    padding: 0.6em 0px;
+    color: #a8abad;
+    text-align: left;
+}
+
+.registro .lado-izquierdo p {
+    padding: 0.5em 0px;
+    color: #a8abad;
+}
+
+.registro .b{
+    margin-left: 0%;
+}
+
+input[type=email]{
+    padding: 7px;
+    border: 0;
+    border-radius: 4px;
+}
