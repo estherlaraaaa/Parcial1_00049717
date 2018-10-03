@@ -1,0 +1,2 @@
+gpg-agent stop/pre-start, process 8389
+gpgconf: warning: can not open config file /home/parcial1sec02/.gnupg/gpg-agent.conf: No existe el archivo o el directorio
